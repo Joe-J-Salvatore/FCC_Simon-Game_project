@@ -1,0 +1,82 @@
+body, html {
+  text-align: center;
+  margin: 20px 0;
+  padding: 0;
+}
+h2, span {
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0.6px;
+  font-size: 4em;
+  margin: 0 2px; 
+}
+span {
+  cursor: pointer;
+}
+.green {
+  color: green;
+  border: 1px solid black;
+}
+.green-active {
+  color: white !important;
+  background-color: green;
+  vertical-align: middle;
+  transform: scale(1.1);
+}
+.green:hover {
+  color: white;
+  background-color: green;
+}
+/* .green:active {
+  color: white;
+  background-color: green;
+  vertical-align: middle;
+  transform: scale(1.1);
+} */
+.yellow {
+  color: yellow;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+.yellow-active {
+  color: white !important;
+  background-color: yellow;
+  vertical-align: baseline;
+  transform: scale(1.1);
+}
+.yellow:hover {
+  color: white;
+  background-color: yellow;
+}
+.red {
+  color: red;
+  border: 1px solid black;
+  padding: 0 2px;
+}
+.red-active {
+  color: white !important;
+  background-color: red;
+  vertical-align: middle;
+  transform: scale(1.1);
+}
+.red:hover {
+  color: white;
+  background-color: red;
+}
+.blue {
+  color: blue;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+.blue-active {
+  color: white !important;
+  background-color: blue;
+  vertical-align: baseline;
+  transform: scale(1.1);
+}
+.blue:hover {
+  color: white;
+  background-color: blue;
+}
+.controls {
+  display: inline-grid;
+}
