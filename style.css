@@ -26,12 +26,6 @@ span {
   color: white;
   background-color: green;
 }
-/* .green:active {
-  color: white;
-  background-color: green;
-  vertical-align: middle;
-  transform: scale(1.1);
-} */
 .yellow {
   color: yellow;
   border: 1px solid black;
@@ -78,5 +72,82 @@ span {
   background-color: blue;
 }
 .controls {
-  display: inline-grid;
+  display: block;
+}
+.controls button#last {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 3px solid black;
+  background-color: yellow;
+}
+.controls button#start {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 3px solid black;
+  background-color: red;
+  margin: 30px 30px 0 30px;
+}
+.controls button#strict {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 3px solid black;
+  background-color: yellow;
+}
+/* .toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  /* border-radius: 50px; */
+  /* overflow: hidden;
+  outline: none;
+  border: 0.5px solid black;
+  cursor: pointer;
+  background-color: blue;
+  transition: background-color ease 0.1s;
+}
+.toggle:before {
+  content: "on off";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  background: white;
+  left: 1px;
+  /* top: 1px;
+  bottom: 1px; */
+  /* border-radius: 50%; */
+  /*font: 10px/28px Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -22px;
+  word-spacing: 37px;
+  color: white;
+  text-shadow: -1px -1px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+.toggle:checked {
+  background-color: green;
+}
+.toggle:checked:before {
+  left: 31px;
+}  */
+#levels {
+  margin: 10px 0;
+}
+h3 {
+  background-color: black;
+    color: white;
+    width: 30px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10%;
 }
