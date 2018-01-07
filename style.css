@@ -140,8 +140,43 @@ span {
 .toggle:checked:before {
   left: 31px;
 }  */
+.tooltip-text {
+  visibility: hidden;
+  width: 50px;
+  background-color: white;
+  color: black;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 36%;
+  left: 57.5%;
+  margin-left: -60px;
+  /* opacity: 0; */
+  transition: opacity 1s;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button#start:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 #levels {
   margin: 10px 0;
+  font-family: 'Helvetica', sans-serif;
 }
 h3 {
   background-color: black;

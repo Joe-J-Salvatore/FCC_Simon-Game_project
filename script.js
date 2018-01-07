@@ -2,13 +2,20 @@ const simonSounds = ['http://freesound.org/data/previews/316/316901_5385832-lq.m
 	'http://freesound.org/data/previews/216/216090_3450800-lq.mp3'];
 const start = document.getElementById('start');
 const letters = document.querySelectorAll('span');
+const levels = document.querySelector('#levels h3');
 let simonSequence = [];
 let playerSequence = [];
 const numLevels = 3;
 let level = 0;
 
 start.addEventListener('click', function() {
-	level++;
+	if (level < numLevels) {
+		level++;
+	} else {
+		level = 1;
+		simonSequence = [];
+		playerSequence = [];
+	}
 	startGameSequence();
 });
 
@@ -31,7 +38,7 @@ for (let j = 0; j < letters.length; j++) {
 			startGameSequence();
 		}
 		if (playerSequence.length === numLevels) {
-			// display you win
+			levels.innerText = 'W';
 		}
 	});
 }
@@ -48,12 +55,12 @@ function checkPlayerSequence() {
 
 function displayError() {
 	console.log('error');
+	levels.innerText = 'X';
 	let counter = 0;
 	let errorInterval = setInterval(function() {
 		counter++;
 		if (counter === 3) {
-			// display error in HTML
-			// playSound(4);
+			// levels.innerText = 'X';
 			clearInterval(errorInterval);
 			playerSequence = [];
 			counter = 0;
@@ -63,7 +70,7 @@ function displayError() {
 
 function startGameSequence() {
 	console.log(`Level: ${level}`);
-	// display level value in HTML
+	levels.innerText = level;
 	generateRandomNum();
 	let i = 0;
 	let gameInterval = setInterval(function() {
