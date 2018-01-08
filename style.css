@@ -140,7 +140,7 @@ span {
 .toggle:checked:before {
   left: 31px;
 }  */
-.tooltip-text {
+.tooltip-last {
   visibility: hidden;
   width: 50px;
   background-color: white;
@@ -152,14 +152,14 @@ span {
   padding: 2px 0;
   position: absolute;
   z-index: 1;
-  bottom: 36%;
-  left: 57.5%;
+  bottom: 34%;
+  left: 43.5%;
   margin-left: -60px;
   /* opacity: 0; */
   transition: opacity 1s;
 }
 
-.tooltip-text::after {
+.tooltip-last::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -170,7 +170,75 @@ span {
   border-color: black transparent transparent transparent;
 }
 
-button#start:hover .tooltip-text {
+button#last:hover .tooltip-last {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-start {
+  visibility: hidden;
+  width: 50px;
+  background-color: white;
+  color: black;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 34%;
+  left: 57.5%;
+  margin-left: -60px;
+  /* opacity: 0; */
+  transition: opacity 1s;
+}
+
+.tooltip-start::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button#start:hover .tooltip-start {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-strict {
+  visibility: hidden;
+  width: 50px;
+  background-color: white;
+  color: black;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 34%;
+  left: 71%;
+  margin-left: -60px;
+  /* opacity: 0; */
+  transition: opacity 1s;
+}
+
+.tooltip-strict::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+button#strict:hover .tooltip-strict {
   visibility: visible;
   opacity: 1;
 }
