@@ -10,6 +10,26 @@ let simonSequence = [];
 let playerSequence = [];
 const numLevels = 3;
 let level = 0;
+
+// onload Simon sequence
+window.addEventListener('load', gameIntro());
+
+function gameIntro() {
+	simonSequence = [0, 1, 2, 3];
+	let i = 0;
+	let replayLastInterval = setInterval(function() {
+		let id = simonSequence[i];
+		let color = document.getElementById(`${id}`).classList.value;
+		console.log(`ID: ${id}, Color: ${color}`);
+		addClassAndSound(id, color);
+		i++;
+		if (i === simonSequence.length) {
+			clearInterval(replayLastInterval);
+			simonSequence = [];
+			console.log(simonSequence);
+		}
+	}, 500);
+}
 // starts non-strict game play
 start.addEventListener('click', function() {
 	level = 1;
