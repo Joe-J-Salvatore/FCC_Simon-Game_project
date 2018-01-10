@@ -11,9 +11,9 @@ let playerSequence = [];
 const numLevels = 3;
 let level = 0;
 
-// onload Simon sequence
+// onload Simon sequence animation
 window.addEventListener('load', gameIntro());
-
+// Simon sequence animation function
 function gameIntro() {
 	simonSequence = [0, 1, 2, 3];
 	let i = 0;
@@ -26,7 +26,7 @@ function gameIntro() {
 		if (i === simonSequence.length) {
 			clearInterval(replayLastInterval);
 			simonSequence = [];
-			console.log(simonSequence);
+			// console.log(simonSequence);
 		}
 	}, 500);
 }
@@ -47,7 +47,7 @@ start.addEventListener('click', function() {
 	// }
 	startGameSequence();
 });
-// user selection i/o
+// user selection input, game output
 for (let j = 0; j < letters.length; j++) {
 	letters[j].addEventListener('click', function() {
 		let id = parseInt(this.id);
