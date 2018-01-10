@@ -8,28 +8,28 @@ h2 {
   color: black;
 }
 @keyframes s-gradient-forward {
-  0% {color: black;}
+  0% {color: green;}
   /* 25% {color: gray;} */
-  /* 50% {color: green; } */
-  75% {color: green;}
+  50% {color: green; }
+  /* 75% {color: green;} */
   100% {color: black;}
 }
 /* @keyframes i-gradient-forward {
   0% {color: black;}
-  25% {color: gray;} */
-  /* 50% {color: yellow; }
-  75% {color: yellow;}
+  25% {color: gray;}
+  50% {color: yellow; }
+  /* 75% {color: green;}
   100% {color: black;}
 } */
 @keyframes m-gradient-forward {
-  0% {color: black;}
+  0% {color: yellow;}
   /* 25% {color: gray;} */
   /* 50% {color: orange; } */
   75% {color: yellow;}
   100% {color: black;}
 }
 @keyframes o-gradient-forward {
-  0% {color: black;}
+  0% {color: red;}
   /* 25% {color: gray;} */
   /* 50% {color: red; } */
   75% {color: red;}
@@ -50,34 +50,34 @@ h2, h1 span {
 }
 span#s {
   animation-name: s-gradient-forward;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+/* span#i {
+  animation-name: i-gradient-forward;
   animation-duration: 0.2s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
   animation-delay: 2.8s;
   animation-fill-mode: forwards;
-}
-span#i {
-  animation-name: s-gradient-forward;
-  animation-duration: 0.2s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-delay: 2.8s;
-  animation-fill-mode: forwards;
-}
+} */
 span#m {
   animation-name: m-gradient-forward;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-  animation-delay: 2.4s;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
 }
 span#o {
   animation-name: o-gradient-forward;
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
-  animation-delay: 2.2s;
+  animation-delay: 2.3s;
   animation-fill-mode: forwards;
 }
 span#n {
